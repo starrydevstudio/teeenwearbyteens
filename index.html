@@ -16,15 +16,12 @@
     }
     .link {
         text-align: center;
-        /* color: rgb(28, 99, 253); */
         color: white;
         border: 0px;
         border-radius: 10px;
         text-decoration: none;
         font-family: sans-serif;
         display: inline-block;
-      
-        /* background: white; */
         padding: 20px 30px;
         margin-bottom: 30px;
         background: black;
@@ -32,6 +29,11 @@
     }
     .twbt {
         margin-top: -30px;
+    }
+    @media (min-width: 565px) {
+        .twbt {
+            margin-top: -130px;
+        }
     }
     .link.editor {
         margin-top: 25px;
@@ -41,8 +43,23 @@
         font-weight: bold;
         font-size: 16px;
     }
+    .logo {    
+        position: fixed;
+    text-align: center;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background: white;
+    box-shadow: 1px 3px 3px rgb(216, 216, 216);
+    }
+    .logo img {
+        max-width: 60px;
+    }
 </style>
 <body>    
+    <div class="logo">
+        <img src="./logo.png" />
+    </div>
     <img src="banner.gif" >
     <img src="img1.JPG" class="twbt">
     <img src="img2.JPG" >
